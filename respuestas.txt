@@ -1,11 +1,36 @@
-27.- ¿Qué es rvm (Ruby Version Manager)? 
+27.-) ¿Qué es rvm (Ruby Version Manager)?
+ 
 Resp.- Es una herramienta (líneas de comandos) de control de versiones que contiene determinados comandos que nos permiten fácilmentente instalar, administrar y trabajar con múltiples entornos de intérpretes de ruby.
 
-31.- Resultado:
+31.-) Resultado:
+
 Hello world
  => nil 
 
 34.- La principal diferencia es que el primer método (irb) se van interpretándo las instrucciones a medida de que se introducen y el segundo método (irb <archivo>) se introduce un programa escrito en un fichero y se interpréta el fichero entero directamente.
+
+40.-)
+ 
+[1] pry(main)> puts x
+10
+=> nil
+[2] pry(main)> def hello
+[2] pry(main)*   puts "Hello world"
+[2] pry(main)* end  
+=> :hello
+[3] pry(main)> hello
+Hello world
+=> nil
+[4] pry(main)> byebye
+bye bye world!!!
+=> nil
+[5] pry(main)> x = "changed"
+=> "changed"
+[6] pry(main)> exit
+program resumes here. Value of x is: changed.
+
+41.- La gema pry nos ayuda a interpretar mejor las respuestas que nos muestra el intérprete irb , gracias a que se utilizan colores para la representación de los determinados objetos.
+
 
 
 
